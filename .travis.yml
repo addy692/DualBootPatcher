@@ -76,7 +76,7 @@ after_success:
   - ls -l /home/travis/yshalsager/DualBootPatcher/build/utilities/DualBootUtilities-9.2.0.zip
   - md5sum /home/travis/yshalsager/DualBootPatcher/build/utilities/DualBootUtilities-9.2.0.zip
   # Upload to transfer.sh
-  - cd utilities && curl --upload-file ./DualBootUtilities-9.2.0.zip https://transfer.sh/DualBootUtilities-9.2.0-${TRAVIS_CURRENT_DATE}.zip
+  - cd /home/travis/yshalsager/DualBootPatcher/build/utilities && curl --upload-file ./DualBootUtilities-9.2.0.zip https://transfer.sh/DualBootUtilities-9.2.0-${TRAVIS_CURRENT_DATE}.zip
   - cd /home/travis/yshalsager/DualBootPatcher/Android_GUI/build/outputs/apk/ && curl --upload-file ./Android_GUI-debug.apk https://transfer.sh/Android_GUI-debug-${TRAVIS_CURRENT_DATE}.apk
 
 deploy:
