@@ -17,7 +17,6 @@ addons:
     packages:
       - build-essential
       - ccache
-      - expect
       - libboost-dev
       - libjansson-dev
       - libssl-dev
